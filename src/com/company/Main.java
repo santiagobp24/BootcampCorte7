@@ -73,36 +73,40 @@ public class Main {
                 numD = 28;
             }
         }
+        int cont=0;
         if (numYEAR == 2022){
+            cont++;
             if(numMONTH == fechaIn.MONTH){
                 if(numDAY >= 1 && numDAY <= fechaIn.DAY_OF_MONTH ){
-                    System.out.println("la fecha es válida");
+                    System.out.println("la fecha es válida ");
                 } else {
-                    System.out.println("la fecha es inválida");
+                    System.out.println("la fecha es inválida ");
                 }
             }else if (numMONTH < fechaIn.MONTH){
                 if (numDAY >= 1 && numDAY <= numD){
-                    System.out.println("la fecha es válida");
+                    System.out.println("la fecha es válida ");
                 }
             }else{
-                System.out.println("la fecha es inválida");
+                System.out.println("la fecha es inválida ");
             }
         }
         if (numYEAR >=1900 && numYEAR <= 2021){
             if (numMONTH >= 1 && numMONTH <= 12){
                 if (numDAY >= 1 && numDAY <= numD){
-                    System.out.println("la fecha es válida");
+                    System.out.println("la fecha es válida ");
                 } else {
-                    System.out.println("la fecha es inválida");
+                    System.out.println("la fecha es inválida ");
 
                 }
             } else {
-                System.out.println("la fecha es inválida");
+                System.out.println("la fecha es inválida ");
 
             }
 
-        } else {
-            System.out.println("la fecha es inválida");
+        } else if (cont==0){
+            System.out.println("la fecha es inválida ");
+
+        }else{
 
         }
     }

@@ -101,8 +101,10 @@ public class Main {
 
             }
 
-        } else {
-            System.out.println("la fecha es inválida");
+        } else if (cont==0){
+            System.out.println("la fecha es inválida ");
+
+        }else{
 
         }
     }
