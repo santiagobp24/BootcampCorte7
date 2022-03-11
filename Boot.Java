@@ -139,25 +139,6 @@ public class Main {
 
         Collections.sort(sierra, new CompararP());
 
-
-
-
-
-
-
-
-        /*System.out.println("Resultados 2");
-        for (int k = 0; k < Resultados2.size(); k++) {
-            System.out.println(Resultados2.get(k).calificacion + " " + Resultados2.get(k).nombre +"\n");
-        }
-        System.out.println("Resultados 4");
-        for (int j = 0; j < Resultados4.size(); j++) {
-            System.out.println(Resultados4.get(j).calificacion + " " + Resultados4.get(j).nombre +"\n");
-        }
-        System.out.println("Resultados 4");
-        for (int j = 0; j < sierra.size(); j++) {
-            System.out.println(sierra.get(j).calificacion + " " + sierra.get(j).nombre +"\n");
-        }*/
         System.out.println("Calificación más alta: "+ sierra.get(0).calificacion+"\n");
         System.out.println("Calificación más baja: "+ sierra.get(sierra.size()-1).calificacion+"\n");
 
