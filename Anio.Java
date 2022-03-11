@@ -52,14 +52,14 @@ public class Main {
         };
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Ingrese la fecha en el formato MM/dd/AAAA");
+        System.out.println("Ingrese la fecha en el formato dd/mm/AAAA");
         String fechaif = scan.next();
         String a = fechaif.substring(0, 2);
         String b = fechaif.substring(3, 5);
         String c = fechaif.substring(6, 10);
-        int numMONTH = Integer.parseInt(a);
+        int numMONTH = Integer.parseInt(b);
         int numYEAR = Integer.parseInt(c);
-        int numDAY = Integer.parseInt(b);
+        int numDAY = Integer.parseInt(a);
 
 
         int numD = 31;
@@ -88,7 +88,7 @@ public class Main {
                 System.out.println("la fecha es inválida");
             }
         }
-        if (numYEAR >=1900 && numYEAR <= 2021){
+        if (numYEAR != 2022 && numYEAR >=1900 && numYEAR <= 2099){
             if (numMONTH >= 1 && numMONTH <= 12){
                 if (numDAY >= 1 && numDAY <= numD){
                     System.out.println("la fecha es válida");
